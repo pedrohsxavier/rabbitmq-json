@@ -1,4 +1,3 @@
-//import model Livro
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
@@ -22,7 +21,7 @@ public class Produtor {
 
         String NOME_FILA = "filaJson";
 
-        List<Livro> livros = new ArrayList<>();
+        List<Livro> livros = new ArrayList<Livro>();
         for (int i=0; i<11; i++) {
             Livro livro = new Livro("Livro"+i, "Letras");
             livros.add(livro);
